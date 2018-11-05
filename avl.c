@@ -29,6 +29,7 @@ void avl_free(struct avl* t) {
   while (!avl_isempty(t)) {
     avl_remove(t->root->val, t);
   }
+  free(t);
 }
 
 
